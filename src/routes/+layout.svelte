@@ -9,4 +9,8 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<div class="navbar bg-base-100 shadow-sm">
+  <a href="/" class="btn btn-ghost text-xl">Home</a>
+  <a href="/qr-code" class="btn btn-ghost text-xl">QRcode</a>
+</div>
 {@render children()}

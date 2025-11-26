@@ -19,10 +19,10 @@ npx sv create my-app
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```sh
-npm run dev
+pnpm run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm run dev -- --open
 ```
 
 ## Building
@@ -30,9 +30,19 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```sh
-npm run build
+pnpm run build
 ```
 
-You can preview the production build with `npm run preview`.
+You can preview the production build with `pnpm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+## Project specific
+
+In this environment, we are using the static adapter with Github Action to automatically deploy the website to Github Pages. 
+
+This requires editing the pnpm-workspace.yaml by adding packages: - "." blob to the file. 
+
+Then adding the deploy.yml to automate deploying using Github Action.
+
+frontend-mentor-material contains the design and image material for reference
