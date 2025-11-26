@@ -23,9 +23,6 @@ jobs:
          node-version: latest
          cache: pnpm
 
-      - name: Install latest pnpm
-        run: pnpm i -g pnpm
-
       - name: Install dependency
         run: pnpm i
 
